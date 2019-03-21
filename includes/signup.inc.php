@@ -27,6 +27,20 @@ if(isset($_POST['signup-submit'])){
             else{
                 $sql = "SELECT * FROM users WHERE username = '$userName";
                 $result = mysqli_query($connect, $sql);
+                $resultcheck = mysqli_num_rows($results);
+                //Check that userName has already been taken
+                if($resultcheck > 0){
+                    header("Location: ../signup.php?signup=usertaken");
+                exit();
+                }else{
+                    //Hash password
+                    $hashedPwd = password_hash($pwd, PASSWORD_DEFAULT);
+                    //Insert user into the database
+                    $sql = "INSERT INTO users (user_name, user_email, user_pwd) values ('$userName', '$email', '$password');";
+                    $mysqli_query($connect, $sql);
+                    header("Location; ../signup.php?signup=success");
+                exit();
+                }
             }
         }
     }
