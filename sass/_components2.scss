@@ -1,6 +1,6 @@
 ////////////////////////////////////////
 // LOGO
-.logo-2 {
+.logo-3 {
     height: 3.25rem;
     margin-left: 2rem;
 }
@@ -8,7 +8,7 @@
 
 ////////////////////////////////////////
 // SEARCH
-.search-2 {
+.search-3 {
     flex: 0 0 40%;
 
     display: flex;
@@ -72,7 +72,7 @@
 
 ////////////////////////////////////////
 // USER NAVIGATION
-.user-nav-2 {
+.user-nav-3 {
     align-self: stretch;
     
     display: flex;
@@ -127,7 +127,7 @@
 
 ////////////////////////////////////////
 // SIDE NAVIGATION
-.side-nav-2 {
+.side-nav-3 {
     font-size: 1.4rem;
     list-style: none;
     margin-top: 3.5rem;
@@ -219,7 +219,7 @@
 
 ////////////////////////////////////////
 // LEGAL TEXT
-.legal-2 {
+.legal-3 {
     font-size: 1.2rem;
     color: var(--color-grey-light-4);
     text-align: center;
@@ -233,7 +233,7 @@
 
 ////////////////////////////////////////
 // GALLERY
-.gallery-2 {
+.gallery-3 {
     display: flex;
 
     &__photo {
@@ -245,7 +245,7 @@
 
 ////////////////////////////////////////
 // HOTEL OVERVIEW
-.overview-2 {
+.overview-3 {
     display: flex;
     align-items: center;
     border-bottom: var(--line);
@@ -326,7 +326,7 @@
 
 ////////////////////////////////////////
 // BUTTON INLINE
-.btn-inline-2 {
+.btn-inline-3 {
     border: none;
     color: var(--color-primary);
     font-size: inherit;
@@ -383,7 +383,7 @@
 
 ////////////////////////////////////////
 // LIST
-.list-2 {
+.list-3 {
     list-style: none;
     margin: 3rem 0;
     padding: 3rem 0;

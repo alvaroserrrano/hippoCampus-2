@@ -1,4 +1,4 @@
-.container-2 {
+.container-3 {
     max-width: 120rem;
     margin: 8rem auto;
     background-color: var(--color-grey-light-1);
@@ -13,7 +13,7 @@
     }
 }
 
-.header-2 {
+.header-3 {
     font-size: 1.4rem;
     height: 7rem;
     background-color: #fff;
@@ -30,7 +30,7 @@
     }
 }
 
-.content-2 {
+.content-3 {
     display: flex;
 
     @media only screen and (max-width: $bp-medium) {
@@ -38,7 +38,7 @@
     }
 }
 
-.sidebar-2 {
+.sidebar-3 {
     background-color: var(--color-grey-dark-1);
 
     flex: 0 0 18%;
@@ -48,13 +48,13 @@
     justify-content: space-between;
 }
 
-.hotel-view-2 {
+.hotel-view-3 {
     background-color: #fff;
 
     flex: 1;
 }
 
-.detail-2 {
+.detail-3 {
     font-size: 1.4rem;
     display: flex;
     padding: 4.5rem;
@@ -70,7 +70,7 @@
     }
 }
 
-.description-2 {
+.description-3 {
     background-color: #fff;
     box-shadow: var(--shadow-light);
     padding: 3rem;
@@ -88,7 +88,7 @@
     }
 }
 
-.user-reviews-2 {
+.user-reviews-3 {
     flex: 1;
 
     display: flex;
