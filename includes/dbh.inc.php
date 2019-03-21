@@ -1,3 +1,6 @@
+
+<?php
+
 $serverName = 'localhost';
 $userName = 'alvaro';
 $password = 'Aserrano1';
@@ -11,3 +14,5 @@ $connect = mysqli_connect($serverName, $userName, $password, $dbname);
 if (!$connect) {
     die("Connection failed: " . mysqli_connect_error());
 }
+
+?>
