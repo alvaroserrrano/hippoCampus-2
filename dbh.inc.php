@@ -1,9 +1,11 @@
 $serverName = 'localhost';
 $userName = 'alvaro';
 $password = 'Aserrano1';
+$dbName = "loginsystem";
 
 
-$connect = mysqli_connect($serverName, $userName, $password);
+
+$connect = mysqli_connect($serverName, $userName, $password, $dbname);
 
 // Check connection
 if (!$connect) {
