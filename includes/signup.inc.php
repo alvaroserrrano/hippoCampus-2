@@ -25,22 +25,30 @@ if(isset($_POST['signup-submit'])){
             exit();
             }
             else{
-                $sql = "SELECT * FROM users WHERE username = '$userName";
-                $result = mysqli_query($connect, $sql);
-                $resultcheck = mysqli_num_rows($results);
-                //Check that userName has already been taken
-                if($resultcheck > 0){
-                    header("Location: ../signup.php?signup=usertaken");
+                $sql = "SELECT user_name FROM users where user_name=?";
+                $stmt = mysqli_stmt_init($connect);
+                if(!mysql_stmt_prepare($stmt, $sql)){
+                    header("Location: ../signup.php?error=sqlerror");
                 exit();
                 }else{
-                    //Hash password
-                    $hashedPwd = password_hash($pwd, PASSWORD_DEFAULT);
-                    //Insert user into the database
-                    $sql = "INSERT INTO users (user_name, user_email, user_pwd) values ('$userName', '$email', '$password');";
-                    $mysqli_query($connect, $sql);
-                    header("Location; ../signup.php?signup=success");
-                exit();
+                    mysql_stmt_bind_param($stmt, "s", $userName);
                 }
+                // $sql = "SELECT * FROM users WHERE username = '$userName";
+                // $result = mysqli_query($connect, $sql);
+                // $resultcheck = mysqli_num_rows($results);
+                // //Check that userName has already been taken
+                // if($resultcheck > 0){
+                //     header("Location: ../signup.php?signup=usertaken");
+                // exit();
+                // }else{
+                //     //Hash password
+                //     $hashedPwd = password_hash($pwd, PASSWORD_DEFAULT);
+                //     //Insert user into the database
+                //     $sql = "INSERT INTO users (user_name, user_email, user_pwd) values ('$userName', '$email', '$password');";
+                //     $mysqli_query($connect, $sql);
+                //     header("Location; ../signup.php?signup=success");
+                // exit();
+                // }
             }
         }
     }
