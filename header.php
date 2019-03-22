@@ -25,7 +25,7 @@
                     <input type="text" name="mailuid" id="" placeholder = "username/email">
                     <input type="text" name="pwd" id="" placeholder= "Enter password">
                     <!-- <input type="text" name="pwdRepeat" id="" placeholder="Repeat password"> -->
-                    <button type="submit" name="logout-submit">Login</button>
+                    <button type="submit" name="login-submit">Login</button>
                 </form>
                 <a href="signup.php"></a>
                 <form action="includes/logout.inc.php" method="post">
