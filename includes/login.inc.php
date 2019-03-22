@@ -20,6 +20,22 @@ if(isset($_POST['login-submit'])){
             mysqli_stmt_bind_param($stmt, "ss", $email, $password);
             mysqli_stmt_execute($stmt);
             $result = mysqli_stmt_get_result($stmt);
+            if($row = mysqli_fetch_assoc($result)){
+                $passwordCheck = password_verify($password, $row['pwdUsers']);
+                if($passwordCheck == false){
+                    header("Location; ../index.php?error=incorrectpassword");
+                    exit();
+                }else{
+                    session_start();
+                    $_SESSION['userId'] = $row['idUsers'];
+                    $_SESSION['userUid'] = $row['uidUsers'];
+                    header("Location; ../index.php?login=success");
+                    exit();
+                }
+            }else{
+                header("Location: ../index.php?error=nouser");
+            exit();
+            }
         }
     }
 
