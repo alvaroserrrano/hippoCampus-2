@@ -14,6 +14,7 @@
     "postcss-cli": "^6.1.2"
   },
   "scripts": {
+    "devserver": "live-server",
     "watch:sass": "node-sass sass/main.scss css/test.css -w",
     "compile:sass": "node-sass sass/main.scss css/test.comp.css",
     "concat:css": "concat -o css/test.concat.css css/icon-font.css css/test.comp.css",
