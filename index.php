@@ -28,6 +28,6 @@
 </body>
 </html>
 
-    <?php
+    <!-- <?php
     require 'footer.php';
-    ?>
+    ?> -->
