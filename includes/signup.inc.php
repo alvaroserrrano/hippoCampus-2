@@ -26,12 +26,16 @@ if(isset($_POST['signup-submit'])){
                     header("Location: ../signup.php?error=passwordfailure&username=".$userName."&email=".$email)
                 }else{
                     $sql = "SELECT uidUsers FROM users WHERE uidUsers=?";
+                    //CREATE A PREPARED STATEMENT
                     $stmt = mysqli_stmt_init($connect);
+                    //PREPARE THE PREPARED STATEMENT
                     if(!mysqli_stmt_prepare($stmt, $sql)){
                         header("Location: ../signup.php?error=sqlerror");
                     exit();
                     }else{
+                        //BIND PARAMETERS TO THE PLACEHOLDER
                         mysqli_stmt_bind_param($stmt, "s", $userName);
+                        //RUN PARAMETERS INSIDE THE DATABASE
                         mysqli_stmt_execute($stmt);
                         mysqli_store_results($stmt);
                         $resultcheck = mysqli_num_rows($stmt);
@@ -40,13 +44,17 @@ if(isset($_POST['signup-submit'])){
                             exit();
                         }else{
                             $sql = "INSERT INTO users (uidUsers, emailUsers, pwdUsers) VALUES (?, ?, ?)";
+                            //CREATE PREPARED STATEMENT
                             $stmt = mysqli_stmt_init($connect);
+                            //PREPARE THE PREPARED STATEMENT
                             if(!mysqli_stmt_prepare($stmt, $sql)){
                                 header("Location: ../signup.php?error=sqlerror");
                                 exit();
                             }else{
                                 $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
+                                //BIND PARAMETERS IN PLACEHOLDER
                                 mysqli_stmt_bind_param($stmt, "sss", $userName, $email, $);
+                                //RUN PARAMETERS INSIDE THE DATABASE
                                 mysqli_stmt_execute($stmt);
                                 header("Location: ../signup.php?signup=success");
                                 exit();
@@ -73,6 +81,7 @@ if(isset($_POST['signup-submit'])){
             }
         }
     }
+    //NOT NECESSARY
     myslqi_stmt_close($stmt);
     mysqli_close($connect);
 }else{
