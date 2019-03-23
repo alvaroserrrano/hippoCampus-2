@@ -21,6 +21,8 @@
                     echo '<p class = "signupError">There is an error in the database</p>';
                 }else if ($_GET['error'] == "usernametaken"){
                     echo '<p class = "signupError">User name already taken. Choose another one</p>';
+                }else if ($_GET['signup'] == "success"){
+                    echo '<p class = "signupSuccess">Succesful signup!</p>';
                 }
             }
             ?>
