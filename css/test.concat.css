@@ -2242,7 +2242,7 @@ body {
     transform: scale(1);
     box-shadow: none; } }
 
-.paragraph:not(:last-of-type) {
+.paragraph-3:not(:last-of-type) {
   margin-bottom: 2rem; }
 
 .list-3 {
@@ -2273,25 +2273,25 @@ body {
         mask-size: cover;
         background-image: none; } }
 
-.recommend-2 {
+.recommend-3 {
   font-size: 1.3rem;
   color: var(--color-grey-dark-3);
   display: flex;
   align-items: center; }
-  .recommend-2__count {
+  .recommend-3__count {
     margin-right: auto; }
-  .recommend-2__friends {
+  .recommend-3__friends {
     display: flex; }
-  .recommend-2__photo {
+  .recommend-3__photo {
     box-sizing: content-box;
     height: 4rem;
     width: 4rem;
     border-radius: 50%;
     border: 3px solid #fff; }
-    .recommend-2__photo:not(:last-child) {
+    .recommend-3__photo:not(:last-child) {
       margin-right: -2rem; }
 
-.review-2 {
+.review-3 {
   background-color: #fff;
   box-shadow: var(--shadow-light);
   padding: 3rem;
@@ -2299,36 +2299,36 @@ body {
   position: relative;
   overflow: hidden; }
   @media only screen and (max-width: 56.25em) {
-    .review-2 {
+    .review-3 {
       padding: 2rem;
       margin-bottom: 3rem; } }
-  .review-2__text {
+  .review-3__text {
     margin-bottom: 2rem;
     z-index: 10;
     position: relative; }
-  .review-2__user {
+  .review-3__user {
     display: flex;
     align-items: center; }
-  .review-2__photo {
+  .review-3__photo {
     height: 4.5rem;
     width: 4.5rem;
     border-radius: 50%;
     margin-right: 1.5rem; }
-  .review-2__user-box {
+  .review-3__user-box {
     margin-right: auto; }
-  .review-2__user-name {
+  .review-3__user-name {
     font-size: 1.1rem;
     font-weight: 600;
     text-transform: uppercase;
     margin-bottom: .4rem; }
-  .review-2__user-date {
+  .review-3__user-date {
     font-size: 1rem;
     color: var(--color-grey-dark-3); }
-  .review-2__rating {
+  .review-3__rating {
     color: var(--color-primary);
     font-size: 2.2rem;
     font-weight: 300; }
-  .review-2::before {
+  .review-3::before {
     content: "\201C";
     position: absolute;
     top: -2.75rem;
