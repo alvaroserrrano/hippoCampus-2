@@ -10,19 +10,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title></title>
     <link rel="stylesheet" href="form.css">
+    <!-- <link rel="stylesheet" href="css/test.css"> -->
 </head>
 <body>
     <header>
-        <nav>
-            <a href="#">
-                <img src="images/logo.jpeg" alt="logohip">
-            </a>
-            <ul>
-                <li>Home</li>
-                <li>Bambi</li>
-                <li>Landmark</li>
-                <li>Finance</li>
-                <li>Developers</li>
+        <nav class="navigation">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="test.html">Home</a></li>
+                <li class="navigation__item"><a href="landmark2.html">Landmakr</a></li>
+                <li class="navigation__item"><a href="bambi2.html">Bambi</a></li>
+                <li class="navigation__item"><a href="budget.html">Finance</a></li>
+                <li class="navigation__item"><a href="testing.html">Developers</a></li>
             </ul>
             <div>
                 <form action="includes/login.inc.php" method="post" class="form">
