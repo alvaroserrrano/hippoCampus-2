@@ -25,16 +25,25 @@
                 <li>Developers</li>
             </ul>
             <div>
-                <form action="includes/login.inc.php" method="post">
+                <form action="includes/login.inc.php" method="post" class="form">
                     <!-- <input type="text" name="uid" id="" placeholder=" Enter user ID"> -->
-                    <input type="text" name="mailuid" id="" placeholder = "username/email">
-                    <input type="text" name="pwd" id="" placeholder= "Enter password">
+                    <div class="form__group">
+                        <input type="text" name="mailuid" id="" placeholder = "username/email" class="form__input">
+                        <label for="mailuid" class="form__label"></label>
+                    </div>
+
+                    <div class="form__group">
+                        <input type="text" name="pwd" id="" placeholder = "password" class="form__input">
+                        <label for="pwf" class="form__label"></label>
+                    </div>
                     <!-- <input type="text" name="pwdRepeat" id="" placeholder="Repeat password"> -->
-                    <button type="submit" name="login-submit">Login</button>
+                    <button type="submit" name="login-submit" class="btn-text">Login</button>
                 </form>
-                <a href="signup.php"></a>
+
+                <button class="btn-text"><a href="signup.php"></a></button>
+                
                 <form action="includes/logout.inc.php" method="post">
-                    <button type="submit" name="logout-submit">Logout</button>
+                    <button type="submit" name="logout-submit" class="btn-text">Logout</button>
                 </form>
             </div>
         </nav>
