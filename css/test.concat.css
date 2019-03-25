@@ -1363,8 +1363,6 @@ body {
   transform: rotate(-135deg); }
 
 #logout {
-  width: 2rem;
-  height: .5rem;
   background: transparent;
   border: none;
   outline: none;
