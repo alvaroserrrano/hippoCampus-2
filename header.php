@@ -34,7 +34,7 @@
 
                     <div class="inputBox">
                         <input type="text" name="pwd" id="" class="form__input">
-                        <label for="pwf" class="form__label">Password</label>
+                        <label for="pwd" class="form__label">Password</label>
                     </div>
                     <!-- <input type="text" name="pwdRepeat" id="" placeholder="Repeat password"> -->
                     <input type="submit" name="login-submit" value="login">
