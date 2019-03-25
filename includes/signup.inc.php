@@ -1,7 +1,7 @@
 <?php
 if(isset($_POST['signup-submit'])){
     
-    require 'dhb.inc.php';
+    require 'dbh.inc.php';
     $userName = mysqli_real_scape_string($connect, $_POST['uid']);
     $email = mysqli_real_scape_string($connect, $_POST['mailuid']);
     $password = mysqli_real_scape_string($connect, $_POST['pwd']);
