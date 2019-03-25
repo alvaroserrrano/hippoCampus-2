@@ -40,6 +40,7 @@
                     <input type="submit" name="login-submit" value="login">
                 </form>
 
+                <p id="signupQuest">Don´t have an account?</p>
                 <button class="btn-text"><a href="signup.php">Sign up</a></button>
                 
                 <form action="includes/logout.inc.php" method="post">
