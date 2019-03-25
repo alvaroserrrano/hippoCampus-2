@@ -22,20 +22,21 @@
                 <li class="navigation__item"><a href="budget.html">Finance</a></li>
                 <li class="navigation__item"><a href="testing.html">Developers</a></li>
             </ul>
-            <div>
-                <form action="includes/login.inc.php" method="post" class="form">
+            <div class="box">
+                <h2>Login</h2>
+                <form action="includes/login.inc.php" method="post">
                     <!-- <input type="text" name="uid" id="" placeholder=" Enter user ID"> -->
-                    <div class="form__group">
-                        <input type="text" name="mailuid" id="" placeholder = "username/email" class="form__input">
-                        <label for="mailuid" class="form__label"></label>
+                    <div class="inputBox">
+                        <input type="text" name="mailuid" id="" class="form__input">
+                        <label for="mailuid" class="form__label">Email</label>
                     </div>
 
-                    <div class="form__group">
-                        <input type="text" name="pwd" id="" placeholder = "password" class="form__input">
-                        <label for="pwf" class="form__label"></label>
+                    <div class="inputBox">
+                        <input type="text" name="pwd" id="" class="form__input">
+                        <label for="pwf" class="form__label">Password</label>
                     </div>
                     <!-- <input type="text" name="pwdRepeat" id="" placeholder="Repeat password"> -->
-                    <button type="submit" name="login-submit" class="btn-text">Login</button>
+                    <button type="submit" name="login-submit" value="submit" class="btn-text">Login</button>
                 </form>
 
                 <button class="btn-text"><a href="signup.php"></a></button>
