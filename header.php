@@ -14,7 +14,7 @@
 </head>
 <body>
     <header>
-        <nav class="navigation">
+        <!-- <nav class="navigation">
             <ul class="navigation__list">
                 <li class="navigation__item"><a href="test.html">Home</a></li>
                 <li class="navigation__item"><a href="landmark2.html">Landmakr</a></li>
@@ -22,6 +22,7 @@
                 <li class="navigation__item"><a href="budget.html">Finance</a></li>
                 <li class="navigation__item"><a href="testing.html">Developers</a></li>
             </ul>
+        </nav> -->
             <div class="box">
                 <h2>Login</h2>
                 <form action="includes/login.inc.php" method="post">
@@ -36,16 +37,15 @@
                         <label for="pwf" class="form__label">Password</label>
                     </div>
                     <!-- <input type="text" name="pwdRepeat" id="" placeholder="Repeat password"> -->
-                    <button type="submit" name="login-submit" value="submit" class="btn-text">Login</button>
+                    <input type="submit" name="login-submit" value="login">
                 </form>
 
-                <button class="btn-text"><a href="signup.php"></a></button>
+                <button class="btn-text"><a href="signup.php">Sign up</a></button>
                 
                 <form action="includes/logout.inc.php" method="post">
-                    <button type="submit" name="logout-submit" class="btn-text">Logout</button>
+                    <input type="submit" value="logout" name="logout-submit">
                 </form>
             </div>
-        </nav>
     </header>
 </body>
 </html>

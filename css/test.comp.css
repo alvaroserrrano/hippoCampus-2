@@ -916,6 +916,18 @@ body {
   top: 0;
   transform: rotate(-135deg); }
 
+#logout {
+  width: 2rem;
+  height: .5rem;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #03a9f4;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px; }
+
 .section-about {
   background-color: #f7f7f7;
   padding: 25rem 0;
