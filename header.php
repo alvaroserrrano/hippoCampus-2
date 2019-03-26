@@ -1,6 +1,6 @@
 <?php
     session_start();
-    include '/dbh.inc.php';
+    include './includes/dbh.inc.php';   
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -28,12 +28,12 @@
                 <form action="includes/login.inc.php" method="post">
                     <!-- <input type="text" name="uid" id="" placeholder=" Enter user ID"> -->
                     <div class="inputBox">
-                        <input type="text" name="mailuid" id="" class="form__input">
+                        <input type="text" name="mailuid" id="" class="form__input" required="">
                         <label for="mailuid" class="form__label">Email</label>
                     </div>
 
                     <div class="inputBox">
-                        <input type="text" name="pwd" id="" class="form__input">
+                        <input type="text" name="pwd" id="" class="form__input" required="">
                         <label for="pwd" class="form__label">Password</label>
                     </div>
                     <!-- <input type="text" name="pwdRepeat" id="" placeholder="Repeat password"> -->

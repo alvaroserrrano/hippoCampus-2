@@ -4,7 +4,7 @@ if(isset($_POST['signup-submit'])){
     require 'dbh.inc.php';
     $userName = mysqli_real_scape_string($connect, $_POST['uid']);
     $email = mysqli_real_scape_string($connect, $_POST['mailuid']);
-    $password = mysqli_real_scape_string($connect, $_POST['pwd']);
+    $password = mysqli_reali_scape_string($connect, $_POST['pwd']);
     $passwordRepeat = mysqli_real_scape_string($connect, $_POST['pwdRepeat']);
     //Check if any field is empty
     if (empty($userName) || empty($email) || empty($password) || empty($passwordRepeat) ) {
@@ -23,7 +23,7 @@ if(isset($_POST['signup-submit'])){
             }
             else{
                 if($password !== $passwordRepeat){
-                    header("Location: ../signup.php?error=passwordfailure&username=".$userName."&email=".$email)
+                    header("Location: ../signup.php?error=passwordfailure&username=".$userName."&email=".$email);
                 }else{
                     $sql = "SELECT uidUsers FROM users WHERE uidUsers=?";
                     //CREATE A PREPARED STATEMENT
@@ -53,7 +53,7 @@ if(isset($_POST['signup-submit'])){
                             }else{
                                 $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
                                 //BIND PARAMETERS IN PLACEHOLDER
-                                mysqli_stmt_bind_param($stmt, "sss", $userName, $email, $);
+                                mysqli_stmt_bind_param($stmt, "sss", $userName, $email, $hashedPassword);
                                 //RUN PARAMETERS INSIDE THE DATABASE
                                 mysqli_stmt_execute($stmt);
                                 //Maybe take user to login page?????????

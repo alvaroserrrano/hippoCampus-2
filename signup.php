@@ -36,7 +36,7 @@
                 }
             }
             ?>
-            <form action="signup.inc.php" method="post">
+            <form action="./includes/signup.inc.php" method="post">
                 <input type="text" name="uid" id="" placeholder=" Enter user ID">
                 <input type="text" name="mailuid" id="" placeholder = "Enter email">
                 <input type="text" name="pwd" id="" placeholder= "Enter password">
