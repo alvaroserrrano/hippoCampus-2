@@ -9,13 +9,27 @@
 </head>
 <body>
     <main>
-        <p>Your opinion matters!</p>
-        <form class="contactForm" action="contactform.php" method="post">
-            <input type="text" name="name" id="" placeholder="Full name">
-            <input type="text" name="mail" id="" placeholder="Email">
-            <input type="text" name="subject" id="" placeholder="Subject">
-            <input type="text" name="message" id="" placeholder="Message">
-            <button type="submit">SEND MAIL</button>
+        <p class="paragraph">Your opinion matters!</p>
+        <form class="contactForm" action="contactform.php" method="post" class="form">
+            <div class="form__group">
+                <input type="text" name="name" class="form__input" id="">
+                <label for="name" class="form__label"></label>
+            </div>
+            <div class="form__group">
+                <input type="text" name="mail" class="form__input" id="">
+                <label for="mail" class="form__label"></label>
+            </div>
+            <div class="form__group">
+                <input type="text" name="subject" class="form__input" id="">
+                <label for="subject" class="form__label"></label>
+            </div>
+            <div class="form__group">
+                <input type="text" name="message" class="form__input" id="">
+                <label for="message" class="form__label"></label>
+            </div>
+            <div class="form__group">
+                <button type="submit" class="btn btn--green">Send mail &rarr;</button>
+            </div>
         </form>
     </main>
 </body>
