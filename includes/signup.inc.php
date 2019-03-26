@@ -43,7 +43,7 @@ if(isset($_POST['signup-submit'])){
                         mysqli_stmt_bind_param($stmt, "s", $userName);
                         //RUN PARAMETERS INSIDE THE DATABASE
                         mysqli_stmt_execute($stmt);
-                        mysqli_store_results($stmt);
+                        mysqli_stmt_store_result($stmt);
                         $resultcheck = mysqli_num_rows($stmt);
                         if($resultcheck > 0){
                             header("Location: ../signup.php?error=usertaken&email=".$email);
@@ -63,7 +63,7 @@ if(isset($_POST['signup-submit'])){
                                 //RUN PARAMETERS INSIDE THE DATABASE
                                 mysqli_stmt_execute($stmt);
                                 //Maybe take user to login page?????????
-                                header("Location: ../signup.php?signup=success");
+                                header("Location: ../main.php?signup=success");
                                 exit();
                             }
                         }
