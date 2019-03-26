@@ -29,7 +29,7 @@ if(isset($_POST['signup-submit'])){
             }
             else{
                 if($password !== $passwordRepeat){
-                    header("Location: ../signup.php?error=passwordfailure&username=".$userName."&email=".$email);
+                    header("Location: ../signup.php?error=passwordnotmatch&username=".$userName."&email=".$email);
                 }else{
                     $sql = "SELECT uidUsers FROM users WHERE uidUsers=?";
                     //CREATE A PREPARED STATEMENT
