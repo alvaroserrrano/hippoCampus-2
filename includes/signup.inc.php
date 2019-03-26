@@ -2,10 +2,16 @@
 if(isset($_POST['signup-submit'])){
     
     require 'dbh.inc.php';
-    $userName = mysqli_real_scape_string($connect, $_POST['uid']);
-    $email = mysqli_real_scape_string($connect, $_POST['mailuid']);
-    $password = mysqli_reali_scape_string($connect, $_POST['pwd']);
-    $passwordRepeat = mysqli_real_scape_string($connect, $_POST['pwdRepeat']);
+    // $userName = mysqli_real_scape_string($connect, $_POST['uid']);
+    // $email = mysqli_real_scape_string($connect, $_POST['mailuid']);
+    // $password = mysqli_reali_scape_string($connect, $_POST['pwd']);
+    // $passwordRepeat = mysqli_real_scape_string($connect, $_POST['pwdRepeat']);
+
+    $userName = $_POST['uid'];
+    $email = $_POST['mailuid'];
+    $password = $_POST['pwd'];
+    $passwordRepeat = $_POST['pwdRepeat'];
+
     //Check if any field is empty
     if (empty($userName) || empty($email) || empty($password) || empty($passwordRepeat) ) {
         header("Location: ../signup.php?error=emptyfields&username=".$userName."&email=".$email);
