@@ -18,7 +18,14 @@
             <?php
                 if(isset($_SESSION['userId'])){
                     echo '<p class="login-status">You are logged in</p>';
-                }else{
+                }elseif (isset($_GET['error'])) {
+                    if($_GET['error'] == "nouser"){
+                        echo '<p>No such user in our database</p>';
+                        echo '<br>';
+                        echo '<p>Please sign up</p>';
+                    }
+                }
+                else{
                     echo '<p class="login-status">You are logged out</p>';
                 }
             ?>
