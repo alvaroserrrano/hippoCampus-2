@@ -23,31 +23,41 @@
                 <li class="navigation__item"><a href="testing.html">Developers</a></li>
             </ul>
         </nav> -->
-
-        <div class="box">
-            <h2>Login</h2>
-            <form action="includes/login.inc.php" method="post">
-                <!-- <input type="text" name="uid" id="" placeholder=" Enter user ID"> -->
-                <div class="inputBox">
-                    <input type="text" name="mailuid" id="" class="form__input" required="">
-                    <label for="mailuid" class="form__label">Email</label>
-                </div>
-
-                <div class="inputBox">
-                    <input type="password" name="pwd" id="" class="form__input" required="">
-                    <label for="pwd" class="form__label">Password</label>
-                </div>
-                <!-- <input type="text" name="pwdRepeat" id="" placeholder="Repeat password"> -->
-                <input type="submit" name="login-submit" value="login">
-            </form>
-
-            <p id="signupQuest">Don´t have an account?</p>
-            <button class="btn-text"><a href="signup.php">Sign up</a></button>
+        <div class="header-login">
+            <?php
+                if(isset($_SESSION['userId'])){
+                    echo '<p class="login-status">You are logged in</p>
+                    <div class="box">
+                        <h2>Login System</h2>
+                        <form action="includes/logout.inc.php" method="post">
+                        <input type="submit" value="logout" name="logout-submit">
+                        </form>
+                    </div>';
+                }else{
+                    echo '<p class="login-status">You are logged out</p>
+                    <div class="box">
+                        <h2>Login</h2>
+                        <form action="includes/login.inc.php" method="post">
+                            <!-- <input type="text" name="uid" id="" placeholder=" Enter user ID"> -->
+                            <div class="inputBox">
+                                <input type="text" name="mailuid" id="" class="form__input" required="">
+                                <label for="mailuid" class="form__label">Email</label>
+                            </div>
             
-            <form action="includes/logout.inc.php" method="post">
-                <input type="submit" value="logout" name="logout-submit">
-            </form>
-        </div>
+                            <div class="inputBox">
+                                <input type="password" name="pwd" id="" class="form__input" required="">
+                                <label for="pwd" class="form__label">Password</label>
+                            </div>
+                            <!-- <input type="text" name="pwdRepeat" id="" placeholder="Repeat password"> -->
+                            <input type="submit" name="login-submit" value="login">
+                        </form>
+        
+                        <p id="signupQuest">Don´t have an account?</p>
+                        <button class="btn-text"><a href="signup.php">Sign up</a></button>
+                    </div> ';
+                }
+            ?>
+        </div>  
     </header>
 </body>
 </html>
