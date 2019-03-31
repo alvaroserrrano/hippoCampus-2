@@ -2139,6 +2139,8 @@ body {
       .side-nav-3__link:link, .side-nav-3__link:visited {
         flex-direction: column;
         padding: 1.5rem .5rem; } }
+  .side-nav-3__link:hover {
+    transform: scale(1.4); }
   .side-nav-3__icon {
     width: 1.75rem;
     height: 1.75rem;

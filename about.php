@@ -55,9 +55,9 @@
                     <li class="side-nav-3__item side-nav-3__item--active">
                         <a href="#" class="side-nav-3__link">
                             <svg class="side-nav-3__icon">
-                                <use xlink:href="images/sprite.svg#icon-home"></use>
+                                <use xlink:href="images/sprite.svg#icon-compass"></use>
                             </svg>
-                            <span>Hotel</span>
+                            <span><a href="main.php">HIPPO CAMPUS</a></span>
                         </a>
                     </li>
                     <li class="side-nav-3__item">
@@ -65,7 +65,7 @@
                             <svg class="side-nav-3__icon">
                                 <use xlink:href="images/sprite.svg#icon-aircraft-take-off"></use>
                             </svg>
-                            <span>Flight</span>
+                            <span><a href="bambi2.html">BAMBI</a></span>
                         </a>
                     </li>
                     <li class="side-nav-3__item">
@@ -73,15 +73,23 @@
                             <svg class="side-nav-3__icon">
                                 <use xlink:href="images/sprite.svg#icon-key"></use>
                             </svg>
-                            <span>Car rental</span>
+                            <span><a href="landmark2.html">LANDMARK</a></span>
                         </a>
                     </li>
                     <li class="side-nav-3__item">
                         <a href="#" class="side-nav-3__link">
                             <svg class="side-nav-3__icon">
-                                <use xlink:href="images/sprite.svg#icon-map"></use>
+                                <use xlink:href="images/sprite.svg#icon-globe"></use>
                             </svg>
-                            <span>Tours</span>
+                            <span><a href="budget.html">FINANCE</a></span>
+                        </a>
+                    </li>
+                    <li class="side-nav-3__item">
+                        <a href="#" class="side-nav-3__link">
+                            <svg class="side-nav-3__icon">
+                                <use xlink:href="images/sprite.svg#icon-bookmark"></use>
+                            </svg>
+                            <span><a href="#php">DEVELOPERS</a></span>
                         </a>
                     </li>
                 </ul>
@@ -96,13 +104,16 @@
             <main class="hotel-view-3">
                 <div class="gallery-3">
                     <figure class="gallery-3__item">
-                        <img src="images/hotel-1.jpg" alt="Photo of hotel 1" class="gallery-3__photo">
+                        <img src="images/html.png" alt="HTML" class="gallery-3__photo">
                     </figure>
                     <figure class="gallery-3__item">
-                        <img src="images/hotel-2.jpg" alt="Photo of hotel 2" class="gallery-3__photo">
+                        <img src="images/css.png" alt="CSS" class="gallery-3__photo">
                     </figure>
                     <figure class="gallery-3__item">
-                        <img src="images/hotel-3.jpg" alt="Photo of hotel 3" class="gallery-3__photo">
+                        <img src="images/boot.jpeg" alt="BOOTSTRAP" class="gallery-3__photo">
+                    </figure>
+                    <figure class="gallery-3__item">
+                        <img src="images/jq.png" alt="jQuery" class="gallery-3__photo">
                     </figure>
                 </div>
 
