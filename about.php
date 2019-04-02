@@ -9,6 +9,23 @@
         <link rel="shortcut icon" type="image/png" href="images/loghip.jpeg">
         
         <title>trillo &mdash; Your all-in-one booking app</title>
+        <script>
+        function showSuggestion (str){
+            if(str.length == 0){
+                document.getElementById('output').innerHTML="";
+            }else{
+                //AJAX CALL
+                var xmlhttp = new XMLHTTPRequest();
+                xmlhttp.onreadystatechange = function () {
+                    if(this.readyState == 4 && this.status == 200){
+                        document.getElementById('output').innerHTML=this.responseText;
+                    }
+                }
+                xmlhtpp.open("GET", "suggest.php?q="+str, true);
+                xmlhtpp.send();
+            }
+        } 
+        </script>
     </head>
     <body>
         <div class="container-3">
@@ -16,13 +33,14 @@
                 <img src="images/loghip.jpeg" alt="trillo logo" class="logo-3">
 
                 <form action="#" class="search-3">
-                    <input type="text" class="search-3__input" placeholder="Search content">
+                    <input type="text" class="search-3__input" placeholder="Search content" onkeyup="showSuggestion(this.value)">
                     <button class="search-3__button">
                         <svg class="search-3__icon">
                             <use xlink:href="images/sprite.svg#icon-magnifying-glass"></use>
                         </svg>
                     </button>
                 </form>
+                <p><span id="output" style="font-weight:bold">Suggestions</span> </p>
 
                 <nav class="user-nav-3">
                     <div class="user-nav-3__icon-box">
