@@ -181,6 +181,7 @@
                                 <img src="images/user-5.jpg" alt="Friend 3" class="recommend-3__photo">
                                 <img src="images/user-6.jpg" alt="Friend 4" class="recommend-3__photo">
                             </div>
+                            <img src="images/git.png" alt="">
                         </div>
                     </div>
 
@@ -193,8 +194,8 @@
                                 <img src="images/user-1.jpg" alt="User 1" class="review-3__photo">
                                 <div class="review-3__user-box">
                                     <p class="review-3__user-name">Nick Smith</p>
-                                    <p class="review-3__user-date">Feb 23rd, 2017</p>
-                                </divages
+                                    <p class="review-3__user-date">Feb 23rd, 2017 </p>
+                                </divages>
                                 <div class="review-3__rating">7.8</div>
                             </figcaption>
                         </figure>
@@ -215,17 +216,6 @@
 
                         <button class="btn-inline-3">Show all <span>&rarr;</span></button>
                     </div>
-
-                    <div class="cta-3">
-                        <h2 class="cta-3__book-now">
-                            Good news! We have 4 free rooms for your selected dates!
-                        </h2>
-                        <button class="btn-3">
-                            <span class="btn-3__visible">Book now</span>
-                            <span class="btn-3__invisible">Only 4 rooms left</span>
-                        </button>
-                    </div>
-
                 </div>
 
 
