@@ -34,7 +34,7 @@
                         </form>
                     </div>';
                 }else{
-                    echo '<p class="login-status">You are logged out</p>
+                    echo '
                     <div class="box">
                         <h2>Login</h2>
                         <form action="includes/login.inc.php" method="post">

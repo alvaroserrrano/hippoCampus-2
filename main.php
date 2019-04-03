@@ -33,10 +33,7 @@
                     <li class="navigation__item" target="_blank"><a href="budget.html" class="navigation__link"><span>04</span>Finance</a></li>
                     <li class="navigation__item" target="_blank"><a href="about.php" class="navigation__link"><span>05</span>Developers</a></li>
                     <li class="navigation__item">
-                        <form action="includes/logout.inc.php" method="post">
-                            <a href="about.php" class="navigation__link"><input id="logout" type="submit" value="logout" name="logout-submit"></a>
-                        </form>
-                    </li>
+                    <li class="navigation__item" target="_blank"><a href="index.php" class="navigation__link"><span>06</span>Logout</a></li>
                     </ul>
             </nav>
         </div>
