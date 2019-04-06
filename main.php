@@ -414,7 +414,7 @@
                     Some parts of the service are billed on a subscription basis. You will be billed on a recurring period of 2 years.
                     Our service allows you to post, link, store, share and otherwise make available certain information, text, graphics, videos or other material. You are responsible for the Copyright fines that you may incur.
                     </p>
-                    <a href="#" class="btn btn--green">Book now</a>
+                    <a href="hotel.html" class="btn btn--green">Book now</a>
                 </div>
             </div>
         </div>
