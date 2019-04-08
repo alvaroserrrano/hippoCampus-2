@@ -10,5 +10,5 @@ if(isset($_POST['submit'])){
     $headers = "From" . $mailFrom;
     
     mail($mailTo, $subject, $message, $headers);
-    header("Location: index.php?mailSend");
+    header("Location: loginPage.php?mailSend");
 }
