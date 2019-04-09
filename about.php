@@ -9,23 +9,6 @@
         <link rel="shortcut icon" type="image/png" href="images/loghip.jpeg">
         
         <title>trillo &mdash; Your all-in-one booking app</title>
-        <script>
-        function showSuggestion (str){
-            if(str.length == 0){
-                document.getElementById('output').innerHTML="";
-            }else{
-                //AJAX CALL
-                var xmlhttp = new XMLHTTPRequest();
-                xmlhttp.onreadystatechange = function () {
-                    if(this.readyState == 4 && this.status == 200){
-                        document.getElementById('output').innerHTML=this.responseText;
-                    }
-                }
-                xmlhtpp.open("GET", "suggest.php?q="+str, true);
-                xmlhtpp.send();
-            }
-        } 
-        </script>
     </head>
     <body>
         <div class="container-3">
@@ -33,7 +16,7 @@
                 <img src="images/loghip.jpeg" alt="trillo logo" class="logo-3">
 
                 <form action="#" class="search-3">
-                    <input type="text" class="search-3__input" placeholder="Search content" onkeyup="showSuggestion(this.value)">
+                    <input type="text" class="search-3__input" placeholder="Search content" >
                     <button class="search-3__button">
                         <svg class="search-3__icon">
                             <use xlink:href="images/sprite.svg#icon-magnifying-glass"></use>
@@ -73,7 +56,7 @@
                     <li class="side-nav-3__item side-nav-3__item--active">
                         <a href="#" class="side-nav-3__link">
                             <svg class="side-nav-3__icon">
-                                <use xlink:href="images/sprite.svg#icon-compass"></use>
+                                <a href="main.php"><use xlink:href="images/sprite.svg#icon-compass"></use></a>
                             </svg>
                             <span><a href="main.php">HIPPO CAMPUS</a></span>
                         </a>
@@ -81,7 +64,7 @@
                     <li class="side-nav-3__item">
                         <a href="#" class="side-nav-3__link">
                             <svg class="side-nav-3__icon">
-                                <use xlink:href="images/sprite.svg#icon-aircraft-take-off"></use>
+                                <a href="bambi2.html"><use xlink:href="images/sprite.svg#icon-aircraft-take-off"></use></a>
                             </svg>
                             <span><a href="bambi2.html">BAMBI</a></span>
                         </a>
@@ -89,7 +72,7 @@
                     <li class="side-nav-3__item">
                         <a href="#" class="side-nav-3__link">
                             <svg class="side-nav-3__icon">
-                                <use xlink:href="images/sprite.svg#icon-key"></use>
+                                <a href="landmark2.html"><use xlink:href="images/sprite.svg#icon-key"></use></a>
                             </svg>
                             <span><a href="landmark2.html">LANDMARK</a></span>
                         </a>
@@ -97,7 +80,7 @@
                     <li class="side-nav-3__item">
                         <a href="#" class="side-nav-3__link">
                             <svg class="side-nav-3__icon">
-                                <use xlink:href="images/sprite.svg#icon-globe"></use>
+                                <a href="budget.html"><use xlink:href="images/sprite.svg#icon-globe"></use></a>
                             </svg>
                             <span><a href="budget.html">FINANCE</a></span>
                         </a>
@@ -105,9 +88,25 @@
                     <li class="side-nav-3__item">
                         <a href="#" class="side-nav-3__link">
                             <svg class="side-nav-3__icon">
-                                <use xlink:href="images/sprite.svg#icon-bookmark"></use>
+                                <a href="#php"><use xlink:href="images/sprite.svg#icon-bookmark"></use></a>
                             </svg>
                             <span><a href="#php">DEVELOPERS</a></span>
+                        </a>
+                    </li>
+                    <li class="side-nav-3__item">
+                        <a href="#" class="side-nav-3__link">
+                            <svg class="side-nav-3__icon">
+                                <a href="index.php"><use xlink:href="images/sprite.svg#icon-bookmark"></use></a>
+                            </svg>
+                            <span><a href="index.php">LIVE CHAT</a></span>
+                        </a>
+                    </li>
+                    <li class="side-nav-3__item">
+                        <a href="#" class="side-nav-3__link">
+                            <svg class="side-nav-3__icon">
+                                <a href="#php"><use xlink:href="images/sprite.svg#icon-bookmark"></use></a>
+                            </svg>
+                            <span><a href="#php">LOGOUT</a></span>
                         </a>
                     </li>
                 </ul>

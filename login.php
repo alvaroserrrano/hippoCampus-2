@@ -30,7 +30,7 @@ if(isset($_POST['login'])){
                     $statement = $connect->prepare($sub_query);
                     $statement->execute();
                     $_SESSION['login_details_id'] = $connect->lastInsertId();
-                    header("location:index.php");
+                    header("location:main.php");
                 }else{
                     $message = "<label>Wrong password</label>";
                 }
