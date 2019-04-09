@@ -120,11 +120,11 @@ $(document).ready(function(){
     success:function(data)
     {
         //$('#chat_message_'+to_user_id).val('');
-        var element = $('#chat_message_'+to_user_id).emojineArea();
-        element[0].emojineArea.setText('');
+        var element = $('#chat_message_'+to_user_id).emojioneArea();
+        element[0].emojioneArea.setText('');
         $('#chat_history_'+to_user_id).html(data);
     }
-    });
+    })
     });
 
     function fetch_user_chat_history(to_user_id)
@@ -136,14 +136,14 @@ $(document).ready(function(){
     success:function(data){
         $('#chat_history_'+to_user_id).html(data);
     }
-    });
+    })
     }
 
     function update_chat_history_data()
     {
     $('.chat_history').each(function(){
-    var to_user_id = $(this).data('touserid');
-    fetch_user_chat_history(to_user_id);
+        var to_user_id = $(this).data('touserid');
+        fetch_user_chat_history(to_user_id);
     });
     }
 
@@ -161,7 +161,7 @@ $(document).ready(function(){
         {
 
         }
-    });
+    })
     });
     
     $(document).on('blur', '.chat_message', function(){
@@ -173,7 +173,7 @@ $(document).ready(function(){
             success: function(){
 
             }
-        });
+        })
     });
 
     $('#group_chat_dialog').dialog({
