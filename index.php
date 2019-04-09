@@ -208,7 +208,7 @@ $(document).ready(function(){
             }
             })
         }
-    });
+    }); 
 
     function fetch_group_chat_history()
     {
@@ -227,7 +227,6 @@ $(document).ready(function(){
         })
     }
     }
-
 
     });  
 </script>
