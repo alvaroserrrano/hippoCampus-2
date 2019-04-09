@@ -43,8 +43,14 @@ if(!isset ($_SESSION['user_id'])){
         </div>
 
         <input type="hidden" id="is_active_group_chat_window" value="no" />
-        <button type="button" name="group_chat" id="group_chat" class="btn btn-warning btn-xs">Group Chat</button>
-        <button><a href="main.php">Main page</a></button>
+        <div class="buttons" style="margin-left:150px; margin:top:765px;">
+            <button type="button" name="group_chat" id="group_chat" class="btn btn-warning btn-xs">Group Chat</button>
+            <button type="button" class="btn btn-warning btn-xs"><a style="text-decoration: none; color: #fff" href="main.php">Main page</a></button>
+            <button type="button" class="btn btn-warning btn-xs"><a style="text-decoration: none; color: #fff" href="bambi.html">Bambi</a></button>
+            <button type="button" class="btn btn-warning btn-xs"><a style="text-decoration: none; color: #fff" href="landmark.html">Landmark</a></button>
+            <button type="button" class="btn btn-warning btn-xs"><a style="text-decoration: none; color: #fff" href="budget.html">Finance</a></button>
+            <button type="button" class="btn btn-warning btn-xs"><a style="text-decoration: none; color: #fff" href="about.php">Developers</a></button>
+        </div>
 
     </body>  
 </html>  

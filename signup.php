@@ -1,5 +1,5 @@
 <?php
-    require("header.php");
+    require("login.php");
 ?>
 
 <!DOCTYPE html>
@@ -37,10 +37,9 @@
             }
             ?>
             <form action="./includes/signup.inc.php" method="post">
-                <input type="text" name="uid" id="" placeholder=" Enter user ID">
-                <input type="text" name="mailuid" id="" placeholder = "Enter email">
-                <input type="password" name="pwd" id="" placeholder= "Enter password">
-                <input type="password" name="pwdRepeat" id="" placeholder="Repeat password">
+                <input type="text" name="username" id="" placeholder=" Enter username">
+                <input type="password" name="password" id="" placeholder= "Enter password">
+                <input type="password" name="passwordRepeat" id="" placeholder="Repeat password">
                 <button type="submit" name="signup-submit">Signup</button>
         </form>
         </section>
