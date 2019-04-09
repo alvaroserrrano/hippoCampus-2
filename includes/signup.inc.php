@@ -1,7 +1,7 @@
 <?php
 if(isset($_POST['signup-submit'])){
     
-    require 'database_connection.php';
+    require '../database_connection.php';
     // $userName = mysqli_real_scape_string($connect, $_POST['uid']);
     // $email = mysqli_real_scape_string($connect, $_POST['mailuid']);
     // $password = mysqli_reali_scape_string($connect, $_POST['pwd']);
@@ -24,43 +24,25 @@ if(isset($_POST['signup-submit'])){
             if($password !== $passwordRepeat){
                 header("Location: ../signup.php?error=passwordnotmatch&username=".$username);
             }else{
-                $sql = "SELECT uidUsers FROM users WHERE uidUsers=?";
-                //CREATE A PREPARED STATEMENT
-                $stmt = mysqli_stmt_init($connect);
-                //PREPARE THE PREPARED STATEMENT
-                if(!mysqli_stmt_prepare($stmt, $sql)){
-                    header("Location: ../signup.php?error=sqlerror");
-                exit();
+                $sql = "SELECT username FROM chat WHERE username=$username";
+                $statement = $connect->prepare($sql);
+                $statement->execute();
+                $count = $statement->rowCount();
+                if($count > 0){
+                    header("Location: ../signup.php?error=usertaken");
+                    exit();
                 }else{
-                    //BIND PARAMETERS TO THE PLACEHOLDER
-                    mysqli_stmt_bind_param($stmt, "s", $userName);
-                    //RUN PARAMETERS INSIDE THE DATABASE
-                    mysqli_stmt_execute($stmt);
-                    mysqli_stmt_store_result($stmt);
-                    $resultcheck = mysqli_num_rows($stmt);
-                    if($resultcheck > 0){
-                        header("Location: ../signup.php?error=usertaken&email=".$email);
-                        exit();
-                    }else{
-                        $sql = "INSERT INTO users (uidUsers, emailUsers, pwdUsers) VALUES (?, ?, ?)";
-                        //CREATE PREPARED STATEMENT
-                        $stmt = mysqli_stmt_init($connect);
-                        //PREPARE THE PREPARED STATEMENT
-                        if(!mysqli_stmt_prepare($stmt, $sql)){
-                            header("Location: ../signup.php?error=sqlerror");
-                            exit();
-                        }else{
-                            $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
-                            //BIND PARAMETERS IN PLACEHOLDER
-                            mysqli_stmt_bind_param($stmt, "sss", $userName, $email, $hashedPassword);
-                            //RUN PARAMETERS INSIDE THE DATABASE
-                            mysqli_stmt_execute($stmt);
-                            //Maybe take user to login page?????????
-                            header("Location: ../main.php?signup=success");
-                            exit();
-                        }
-                    }
+                    $sql = "INSERT INTO chat (username, password) VALUES (?, ?, ?)";
+                    $statement = $connect->prepare($sql);
+                    $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
+                    //BIND PARAMETERS IN PLACEHOLDER
+                    $statement->bindParam('ss', $username, $hashedPassword);
+                    $statement->execute();
+                    //Maybe take user to login page?????????
+                    header("Location: ../main.php?signup=success");
+                    exit();
                 }
+                
             // $sql = "SELECT * FROM users WHERE username = '$userName";
             // $result = mysqli_query($connect, $sql);
             // $resultcheck = mysqli_num_rows($results);
@@ -81,9 +63,6 @@ if(isset($_POST['signup-submit'])){
             
         }
     }
-    //NOT NECESSARY
-    myslqi_stmt_close($stmt);
-    mysqli_close($connect);
 }else{
     header("Location: ../signup.php");
     exit();
