@@ -34,7 +34,7 @@
                     <li class="navigation__item" target="_blank"><a href="about.php" class="navigation__link"><span>05</span>Developers</a></li>
                     <li class="navigation__item">
                     <li class="navigation__item" target="_blank"><a href="index.php" class="navigation__link"><span>06</span>Live chat</a></li>
-                    <li class="navigation__item" target="_blank"><a href="loginPage.php" class="navigation__link"><span>07</span>Logout</a></li>
+                    <li class="navigation__item" target="_blank"><a href="logout.php" class="navigation__link"><span>07</span>Logout</a></li>
                     </ul>
             </nav>
         </div>

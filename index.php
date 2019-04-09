@@ -43,13 +43,14 @@ if(!isset ($_SESSION['user_id'])){
         </div>
 
         <input type="hidden" id="is_active_group_chat_window" value="no" />
+        <button style="margin-left:150px; margin-bottom: 50px; margin-top: 50px type="button" name="group_chat" id="group_chat" class="btn btn-warning btn-xs">Group Chat</button>
+            <br>
         <div class="buttons" style="margin-left:150px; margin:top:765px;">
-            <button type="button" name="group_chat" id="group_chat" class="btn btn-warning btn-xs">Group Chat</button>
-            <button type="button" class="btn btn-warning btn-xs"><a style="text-decoration: none; color: #fff" href="main.php">Main page</a></button>
-            <button type="button" class="btn btn-warning btn-xs"><a style="text-decoration: none; color: #fff" href="bambi.html">Bambi</a></button>
-            <button type="button" class="btn btn-warning btn-xs"><a style="text-decoration: none; color: #fff" href="landmark.html">Landmark</a></button>
-            <button type="button" class="btn btn-warning btn-xs"><a style="text-decoration: none; color: #fff" href="budget.html">Finance</a></button>
-            <button type="button" class="btn btn-warning btn-xs"><a style="text-decoration: none; color: #fff" href="about.php">Developers</a></button>
+            <button type="button" class="btn btn-primary btn-xs"><a style="margin: 20px;text-decoration: none; color: #fff" href="main.php">Main page</a></button>
+            <button type="button" class="btn btn-primary btn-xs"><a style="margin-top: 20px;text-decoration: none; color: #fff" href="bambi2.html">Bambi</a></button>
+            <button type="button" class="btn btn-primary btn-xs"><a style="margin-top: 20px;text-decoration: none; color: #fff" href="landmark2.html">Landmark</a></button>
+            <button type="button" class="btn btn-primary btn-xs"><a style="margin-top: 20px;text-decoration: none; color: #fff" href="budget.html">Finance</a></button>
+            <button type="button" class="btn btn-primary btn-xs"><a style="margin-top: 20px;text-decoration: none; color: #fff" href="about.php">Developers</a></button>
         </div>
 
     </body>  
@@ -64,7 +65,8 @@ $(document).ready(function(){
     update_last_activity();
     fetch_user();
     update_chat_history_data();
-    }, 5000);
+    fetch_group_chat_history();
+}, 5000);
 
     function fetch_user()
     {
