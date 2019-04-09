@@ -40,7 +40,7 @@
                     </div>
                     <div class="user-nav-3__user">
                         <img src="images/Foto_graduacion_jpg.jpg" alt="User photo" class="user-nav-3__user-photo">
-                        <span class="user-nav-3__user-name">Alvaro</span>
+                        <span class="user-nav-3__user-name"><a href="https://www.linkedin.com/in/alvaro-serrano-rivas-055351177/">Alvaro</a></span>
                     </div>
                     <div class="user-nav-3__user">
                         <img src="images/hunter.jpg" alt="User photo" class="user-nav-3__user-photo">
@@ -53,39 +53,39 @@
         <div class="content-3">
             <nav class="sidebar-3">
                 <ul class="side-nav-3">
-                    <li class="side-nav-3__item side-nav-3__item--active">
-                        <a href="#" class="side-nav-3__link">
+                    <li class="side-nav-3__item side-nav-3__item--active" style="padding:10px;">
+                        <a href="main.php" class="side-nav-3__link">
                             <svg class="side-nav-3__icon">
                                 <a href="main.php"><use xlink:href="images/sprite.svg#icon-compass"></use></a>
                             </svg>
                             <span><a href="main.php">HIPPO CAMPUS</a></span>
                         </a>
                     </li>
-                    <li class="side-nav-3__item">
-                        <a href="#" class="side-nav-3__link">
+                    <li class="side-nav-3__item" style="padding:10px;">
+                        <a href="bambi2.html" class="side-nav-3__link">
                             <svg class="side-nav-3__icon">
                                 <a href="bambi2.html"><use xlink:href="images/sprite.svg#icon-aircraft-take-off"></use></a>
                             </svg>
                             <span><a href="bambi2.html">BAMBI</a></span>
                         </a>
                     </li>
-                    <li class="side-nav-3__item">
-                        <a href="#" class="side-nav-3__link">
+                    <li class="side-nav-3__item" style="padding:10px;">
+                        <a href="landmark2.html" class="side-nav-3__link">
                             <svg class="side-nav-3__icon">
                                 <a href="landmark2.html"><use xlink:href="images/sprite.svg#icon-key"></use></a>
                             </svg>
                             <span><a href="landmark2.html">LANDMARK</a></span>
                         </a>
                     </li>
-                    <li class="side-nav-3__item">
-                        <a href="#" class="side-nav-3__link">
+                    <li class="side-nav-3__item" style="padding:10px;">
+                        <a href="budget.html" class="side-nav-3__link">
                             <svg class="side-nav-3__icon">
                                 <a href="budget.html"><use xlink:href="images/sprite.svg#icon-globe"></use></a>
                             </svg>
                             <span><a href="budget.html">FINANCE</a></span>
                         </a>
                     </li>
-                    <li class="side-nav-3__item">
+                    <li class="side-nav-3__item" style="padding:10px;">
                         <a href="#" class="side-nav-3__link">
                             <svg class="side-nav-3__icon">
                                 <a href="#php"><use xlink:href="images/sprite.svg#icon-bookmark"></use></a>
@@ -93,20 +93,20 @@
                             <span><a href="#php">DEVELOPERS</a></span>
                         </a>
                     </li>
-                    <li class="side-nav-3__item">
-                        <a href="#" class="side-nav-3__link">
+                    <li class="side-nav-3__item" style="padding:10px;">
+                        <a href="index.php" class="side-nav-3__link">
                             <svg class="side-nav-3__icon">
                                 <a href="index.php"><use xlink:href="images/sprite.svg#icon-bookmark"></use></a>
                             </svg>
                             <span><a href="index.php">LIVE CHAT</a></span>
                         </a>
                     </li>
-                    <li class="side-nav-3__item">
-                        <a href="#" class="side-nav-3__link">
+                    <li class="side-nav-3__item" style="padding:10px;">
+                        <a href="logout.php" class="side-nav-3__link">
                             <svg class="side-nav-3__icon">
                                 <a href="#php"><use xlink:href="images/sprite.svg#icon-bookmark"></use></a>
                             </svg>
-                            <span><a href="#php">LOGOUT</a></span>
+                            <span><a href="logout.php">LOGOUT</a></span>
                         </a>
                     </li>
                 </ul>
@@ -121,16 +121,19 @@
             <main class="hotel-view-3">
                 <div class="gallery-3">
                     <figure class="gallery-3__item">
-                        <img src="images/html.png" alt="HTML" class="gallery-3__photo">
+                        <img src="images/html.png" alt="HTML" class="gallery-3__photo" style = "width:80%; height:80%;  margin-top: 20px;">
                     </figure>
                     <figure class="gallery-3__item">
-                        <img src="images/css.png" alt="CSS" class="gallery-3__photo">
+                        <img src="images/css.png" alt="CSS" class="gallery-3__photo" style = "width:100%; height:100%">
                     </figure>
                     <figure class="gallery-3__item">
-                        <img src="images/boot.jpeg" alt="BOOTSTRAP" class="gallery-3__photo">
+                        <img src="images/boot.jpeg" alt="BOOTSTRAP" class="gallery-3__photo" style = "width:100%; height:100%">
                     </figure>
                     <figure class="gallery-3__item">
-                        <img src="images/jq.png" alt="jQuery" class="gallery-3__photo">
+                        <img src="images/jq.png" alt="jQuery" class="gallery-3__photo" style = "width:80%; height:80%;  margin-top: 20px;">
+                    </figure>
+                    <figure class="gallery-3__item">
+                        <img src="images/git.png" alt="jQuery" class="gallery-3__photo" style = "width:100%; height:100%; margin-top: 20px;">
                     </figure>
                 </div>
 

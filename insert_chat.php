@@ -10,7 +10,7 @@ $data = array(
     ':status'   => '1'
 );
 
-$query = "INSERT INTO chat_message (to_user_id, from_user_id, chat_message, status) VALUES(:to_user_id, :from_user_id, :chat_message, :status)";
+$query = "INSERT INTO chat_message (to_user_id, from_user_id, chat_message, [status]) VALUES(:to_user_id, :from_user_id, :chat_message, :[status])";
 
 $statement = $connect->prepare($query);
 
