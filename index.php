@@ -66,7 +66,7 @@ $(document).ready(function(){
     fetch_user();
     update_chat_history_data();
     fetch_group_chat_history();
-}, 5000);
+    }, 5000);
 
     function fetch_user()
     {
@@ -214,22 +214,22 @@ $(document).ready(function(){
 
     function fetch_group_chat_history()
     {
-    var group_chat_dialog_active = $('#is_active_group_chat_window').val();
-    var action = "fetch_data";
-    if(group_chat_dialog_active == 'yes')
-    {
-        $.ajax({
-        url:"group_chat.php",
-        method:"POST",
-        data:{action:action},
-        success:function(data)
+        var group_chat_dialog_active = $('#is_active_group_chat_window').val();
+        var action = "fetch_data";
+        if(group_chat_dialog_active == 'yes')
         {
-            $('#group_chat_history').html(data);
+            $.ajax({
+            url:"group_chat.php",
+            method:"POST",
+            data:{action:action},
+            success:function(data)
+            {
+                $('#group_chat_history').html(data);
+            }
+            })
         }
-        })
     }
-    
-    });  
+});
 </script>
 
 <!-- TODOS
