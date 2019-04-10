@@ -228,8 +228,7 @@ $(document).ready(function(){
         }
         })
     }
-    }
-
+    
     });  
 </script>
 

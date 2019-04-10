@@ -45,7 +45,7 @@ if(isset($_POST['login'])){
 
 <html>  
     <head>  
-        <title>Chat Application using PHP Ajax Jquery</title>  
+        <title>Live chat!</title>  
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
@@ -55,7 +55,7 @@ if(isset($_POST['login'])){
         <div class="container">
         <br />
         
-        <h3 style="text-align:center">Chat Application using PHP Ajax Jquery</a></h3><br />
+        <h1 style="text-align:center">Welcome to our live chat!</a></h1><br />
         <br />
         <div class="panel panel-default">
             <div class="panel-heading">Chat Application Login</div>

@@ -15,8 +15,6 @@
 <main>
     <div class="section-wrapper">
         <section class="section-default">
-            <h1>Signup</h1>
-
             <?php
             if(isset($_GET['error'])){
                 if($_GET['error'] == "emptyfields"){
@@ -36,12 +34,17 @@
                 }
             }
             ?>
-            <form action="./includes/signup.inc.php" method="post">
-                <input type="text" name="username" id="" placeholder=" Enter username">
-                <input type="password" name="password" id="" placeholder= "Enter password">
-                <input type="password" name="passwordRepeat" id="" placeholder="Repeat password">
-                <button type="submit" name="signup-submit">Signup</button>
-        </form>
+            <div class="container">
+                <div class="jumbotron">
+                    <h2>Signup</h2>
+                    <form action="./includes/signup.inc.php" method="post">
+                        <input type="text" name="username" id="" placeholder=" Enter username">
+                        <input type="password" name="password" id="" placeholder= "Enter password">
+                        <input type="password" name="passwordRepeat" id="" placeholder="Repeat password">
+                        <button type="submit" name="signup-submit" >Signup</button>
+                    </form>
+                </div>
+            </div>
         </section>
     </div>
 </main>
