@@ -45,26 +45,22 @@ if(!isset ($_SESSION['user_id'])){
         <input type="hidden" id="is_active_group_chat_window" value="no" />
         <button style="margin-left:150px; margin-bottom: 50px; margin-top: 50px type="button" name="group_chat" id="group_chat" class="btn btn-warning btn-xs">Group Chat</button>
             <br>
-        <div class="navbar navbar-default navbar-fixed-bottom" style="height:20%">
-            <div class="container" style="position:inherit">
-            <ul nav nav-tabs nav-justified>
-                <li class="nav nav-item">
+        <div class="buttons" style="height:20%">
+                
                 <button type="button" class="btn btn-primary btn-xs"><a style="margin: 20px;text-decoration: none; color: #fff" href="main.php">Main page</a></button>
                 </liclas>
-                <li class="nav nav-item">
+                
                 <button type="button" class="btn btn-primary btn-xs"><a style="margin-top: 20px;text-decoration: none; color: #fff" href="bambi2.html">Bambi</a></button>
-                </li>
-                <li class="nav nav-item"> 
+                
+                
                 <button type="button" class="btn btn-primary btn-xs"><a style="margin-top: 20px;text-decoration: none; color: #fff" href="landmark2.html">Landmark</a></button>
-                </li>
-                <li class="nav nav-item">
+                
+                
                 <button type="button" class="btn btn-primary btn-xs"><a style="margin-top: 20px;text-decoration: none; color: #fff" href="budget.html">Finance</a></button>
-                </li>
-                <li class="nav nav-item">
+                
+                
                 <button type="button" class="btn btn-primary btn-xs"><a style="margin-top: 20px;text-decoration: none; color: #fff" href="about.php">Developers</a></button>
-                </li>
-            </ul>
-            </div>
+                
         </div>
 
     </body>  
