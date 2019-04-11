@@ -119,6 +119,8 @@ if(!isset ($_SESSION['user_id'])){
 
     </body>  
 </html>  
+
+
 <script>  
 $(document).ready(function(){
 
@@ -161,7 +163,7 @@ $(document).ready(function(){
 		modal_content += '</div>';
 		modal_content += '<div class="form-group">';
 		modal_content += '<textarea name="chat_message_'+to_user_id+'" id="chat_message_'+to_user_id+'" class="form-control chat_message"></textarea>';
-		modal_content += '</div><div class="form-group" align="right">';
+		modal_content += '</div><div class="form-group" style="text-align:right">';
 		modal_content+= '<button type="button" name="send_chat" id="'+to_user_id+'" class="btn btn-info send_chat">Send</button></div></div>';
 		$('#user_model_details').html(modal_content);
 	}
@@ -304,8 +306,3 @@ $(document).ready(function(){
 	
 });  
 </script>
-
-
-<!-- TODOS
-is typing
-send button -->
