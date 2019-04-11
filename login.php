@@ -57,7 +57,7 @@ if(isset($_POST['login'])){
         
         <h1 style="text-align:center">Welcome to our live chat!</a></h1><br />
         <br />
-        <div class="panel panel-default">
+        <div class="panel panel-default" >
             <div class="panel-heading">Chat Application Login</div>
             <div class="panel-body">
             <form method="post" >
@@ -88,7 +88,7 @@ if(isset($_POST['login'])){
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    background: url(images/bag.jpeg);
+    background: url(images/The-Surfers.jpg);
     background-size:  cover;
 }
 </style>
