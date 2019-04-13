@@ -109,45 +109,45 @@ function fetch_is_type_status($user_id, $connect){
     return $output;
 }
 
-function fetch_group_chat_history($connect){
-    $query = "
-    SELECT * FROM chat_message 
-    WHERE to_user_id = '0'  
-    ORDER BY timestamp DESC
-    ";
+// function fetch_group_chat_history($connect){
+//     $query = "
+//     SELECT * FROM chat_message 
+//     WHERE to_user_id = '0'  
+//     ORDER BY timestamp DESC
+//     ";
 
-    $statement = $connect->prepare($query);
+//     $statement = $connect->prepare($query);
 
-    $statement->execute();
+//     $statement->execute();
 
-    $result = $statement->fetchAll();
+//     $result = $statement->fetchAll();
 
-    $output = '<ul class="list-unstyled">';
-    foreach($result as $row){
-        $user_name = '';
-        if($row["from_user_id"] == $_SESSION["user_id"])
-        {
-        $user_name = '<b class="text-success">You</b>';
-        }
-        else
-        {
-        $user_name = '<b class="text-danger">'.get_user_name($row['from_user_id'], $connect).'</b>';
-        }
+//     $output = '<ul class="list-unstyled">';
+//     foreach($result as $row){
+//         $user_name = '';
+//         if($row["from_user_id"] == $_SESSION["user_id"])
+//         {
+//         $user_name = '<b class="text-success">You</b>';
+//         }
+//         else
+//         {
+//         $user_name = '<b class="text-danger">'.get_user_name($row['from_user_id'], $connect).'</b>';
+//         }
 
-        $output .= '
+//         $output .= '
 
-        <li style="border-bottom:1px dotted #ccc">
-        <p>'.$user_name.' - '.$row['chat_message'].' 
-            <div align="right">
-            - <small><em>'.$row['timestamp'].'</em></small>
-            </div>
-        </p>
-        </li>
-        ';
-    }
-    $output .= '</ul>';
-    return $output;
-}
+//         <li style="border-bottom:1px dotted #ccc">
+//         <p>'.$user_name.' - '.$row['chat_message'].' 
+//             <div align="right">
+//             - <small><em>'.$row['timestamp'].'</em></small>
+//             </div>
+//         </p>
+//         </li>
+//         ';
+//     }
+//     $output .= '</ul>';
+//     return $output;
+// }
 
 
 ?>

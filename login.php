@@ -76,7 +76,7 @@ if(isset($_POST['login'])){
             </form>
             </div>
             <p style="margin-left: 20px; margin-top: 15px;" id="signupQuest">Don´t have an account?</p>
-            <a style="margin-left: 20px; margin-top: 15px; margin:bottom: 15px;" href="signup.php"><input type="button" value="Sign up" class="btn btn-info" name="signup"></a>
+            <a style="margin-left: 20px; margin-top: 15px; margin:bottom: 15px;" href="signup.php"><input type="button" value="Sign up" class="btn btn-info" style="margin-bottom: 30px;"name="signup"></a>
 
         </div>
         </div>

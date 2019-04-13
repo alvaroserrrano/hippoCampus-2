@@ -37,14 +37,14 @@ if(!isset ($_SESSION['user_id'])){
             border-radius: 3px;
         }
 
-        #group_chat_message
+        /* #group_chat_message
         {
             width: 100%;
             height: auto;
             min-height: 80px;
             overflow: auto;
             padding:6px 24px 6px 12px;
-        }
+        } */
 
         .image_upload
         {
@@ -118,7 +118,7 @@ if(!isset ($_SESSION['user_id'])){
         </div>
 
         <input type="hidden" id="is_active_group_chat_window" value="no" />
-        <button style="margin-left:150px; margin-bottom: 50px; margin-top: 50px type="button" name="group_chat" id="group_chat" class="btn btn-warning btn-xs">Group Chat</button>
+        <!-- <button style="margin-left:150px; margin-bottom: 50px; margin-top: 50px type="button" name="group_chat" id="group_chat" class="btn btn-warning btn-xs">Group Chat</button> -->
             <br>
 
     </body>  

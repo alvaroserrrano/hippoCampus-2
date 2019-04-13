@@ -23,7 +23,7 @@
                         </svg>
                     </button>
                 </form>
-                <p><span id="output" style="font-weight:bold">Suggestions</span> </p>
+                <p><span id="output" style="font-weight:bold"></span> </p>
 
                 <nav class="user-nav-3">
                     <div class="user-nav-3__icon-box">
@@ -54,59 +54,59 @@
             <nav class="sidebar-3">
                 <ul class="side-nav-3">
                     <li class="side-nav-3__item side-nav-3__item--active" style="padding:10px;">
-                        <a href="main.php" class="side-nav-3__link">
+                        <a href="#" class="side-nav-3__link">
                             <svg class="side-nav-3__icon">
-                                <a href="main.php"><use xlink:href="images/sprite.svg#icon-compass"></use></a>
+                                <a href="#"><use xlink:href="images/sprite.svg#icon-compass"></use></a>
                             </svg>
-                            <span><a href="main.php">HIPPO CAMPUS</a></span>
-                        </a>
-                    </li>
-                    <li class="side-nav-3__item" style="padding:10px;">
-                        <a href="bambi2.html" class="side-nav-3__link">
-                            <svg class="side-nav-3__icon">
-                                <a href="bambi2.html"><use xlink:href="images/sprite.svg#icon-aircraft-take-off"></use></a>
-                            </svg>
-                            <span><a href="bambi2.html">BAMBI</a></span>
-                        </a>
-                    </li>
-                    <li class="side-nav-3__item" style="padding:10px;">
-                        <a href="landmark2.html" class="side-nav-3__link">
-                            <svg class="side-nav-3__icon">
-                                <a href="landmark2.html"><use xlink:href="images/sprite.svg#icon-key"></use></a>
-                            </svg>
-                            <span><a href="landmark2.html">LANDMARK</a></span>
-                        </a>
-                    </li>
-                    <li class="side-nav-3__item" style="padding:10px;">
-                        <a href="budget.html" class="side-nav-3__link">
-                            <svg class="side-nav-3__icon">
-                                <a href="budget.html"><use xlink:href="images/sprite.svg#icon-globe"></use></a>
-                            </svg>
-                            <span><a href="budget.html">FINANCE</a></span>
+                            <span><a href="main.php">HTML</a></span>
                         </a>
                     </li>
                     <li class="side-nav-3__item" style="padding:10px;">
                         <a href="#" class="side-nav-3__link">
                             <svg class="side-nav-3__icon">
-                                <a href="#php"><use xlink:href="images/sprite.svg#icon-bookmark"></use></a>
+                                <a href="#"><use xlink:href="images/sprite.svg#icon-aircraft-take-off"></use></a>
                             </svg>
-                            <span><a href="#php">DEVELOPERS</a></span>
+                            <span><a href="#">CSS</a></span>
                         </a>
                     </li>
                     <li class="side-nav-3__item" style="padding:10px;">
-                        <a href="index.php" class="side-nav-3__link">
+                        <a href="#" class="side-nav-3__link">
                             <svg class="side-nav-3__icon">
-                                <a href="index.php"><use xlink:href="images/sprite.svg#icon-bookmark"></use></a>
+                                <a href="#"><use xlink:href="images/sprite.svg#icon-key"></use></a>
                             </svg>
-                            <span><a href="index.php">LIVE CHAT</a></span>
+                            <span><a href="#">JAVASCRIPT</a></span>
                         </a>
                     </li>
                     <li class="side-nav-3__item" style="padding:10px;">
-                        <a href="logout.php" class="side-nav-3__link">
+                        <a href="#" class="side-nav-3__link">
                             <svg class="side-nav-3__icon">
-                                <a href="#php"><use xlink:href="images/sprite.svg#icon-bookmark"></use></a>
+                                <a href="#"><use xlink:href="images/sprite.svg#icon-globe"></use></a>
                             </svg>
-                            <span><a href="logout.php">LOGOUT</a></span>
+                            <span><a href="#">JQUERY</a></span>
+                        </a>
+                    </li>
+                    <li class="side-nav-3__item" style="padding:10px;">
+                        <a href="#" class="side-nav-3__link">
+                            <svg class="side-nav-3__icon">
+                                <a href="#"><use xlink:href="images/sprite.svg#icon-bookmark"></use></a>
+                            </svg>
+                            <span><a href="#">AJAX</a></span>
+                        </a>
+                    </li>
+                    <li class="side-nav-3__item" style="padding:10px;">
+                        <a href="#" class="side-nav-3__link">
+                            <svg class="side-nav-3__icon">
+                                <a href="#"><use xlink:href="images/sprite.svg#icon-bookmark"></use></a>
+                            </svg>
+                            <span><a href="#">SQL</a></span>
+                        </a>
+                    </li>
+                    <li class="side-nav-3__item" style="padding:10px;">
+                        <a href="#" class="side-nav-3__link">
+                            <svg class="side-nav-3__icon">
+                                <a href="#"><use xlink:href="images/sprite.svg#icon-bookmark"></use></a>
+                            </svg>
+                            <span><a href="logout.php">PHP</a></span>
                         </a>
                     </li>
                 </ul>
@@ -135,6 +135,28 @@
                     <figure class="gallery-3__item">
                         <img src="images/git.png" alt="jQuery" class="gallery-3__photo" style = "width:100%; height:100%; margin-top: 20px;">
                     </figure>
+                    <div class="navigation">
+                    <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+        
+                    <label for="navi-toggle" class="navigation__button">
+                        <span class="navigation__icon" >&nbsp;</span>
+                    </label>
+        
+                    <div class="navigation__background" >&nbsp;</div>
+        
+                    <nav class="navigation__nav" >
+                        <ul class="navigation__list">
+                            <li class="navigation__item" target="_blank"><a href="#" class="navigation__link" target="_blank"><span>01</span>Hippo Campus</a></li>
+                            <li class="navigation__item" target="_blank"><a href="bambi2.html" class="navigation__link"><span>02</span>Bambi</a></li>
+                            <li class="navigation__item" target="_blank"><a href="landmark2.html" class="navigation__link"><span>03</span>Landmark</a></li>
+                            <li class="navigation__item" target="_blank"><a href="budget.html" class="navigation__link"><span>04</span>Finance</a></li>
+                            <li class="navigation__item" target="_blank"><a href="about.php" class="navigation__link"><span>05</span>Developers</a></li>
+                            <li class="navigation__item">
+                            <li class="navigation__item" target="_blank"><a href="index.php" class="navigation__link"><span>06</span>Live chat</a></li>
+                            <li class="navigation__item" target="_blank"><a href="logout.php" class="navigation__link"><span>07</span>Logout</a></li>
+                            </ul>
+                    </nav>
+                </div>
                 </div>
 
                 <div class="overview-3">
