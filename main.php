@@ -11,7 +11,7 @@
 
         <link rel="stylesheet" href="css/test.css">
         <link rel="shortcut icon" type="ima™ge/png" href="images/favicon.png">
-        
+
         <title>Hippo Campus | The Halocline</title>
     </head>
 
@@ -108,7 +108,7 @@
             </section>
 
             <section class="section-features">
-                
+
                 <div class="row">
                     <div class="col-1-of-4">
                         <div class="feature-box">
@@ -135,7 +135,7 @@
                             <i class="feature-box__icon icon-basic-map"></i>
                             <h3 class="heading-tertiary u-margin-bottom-small">Find your way</h3>
                             <p class="feature-box__text">
-                            Sometimes you need to get lost to find your way    
+                            Sometimes you need to get lost to find your way
                             </p>
                         </div>
                     </div>
@@ -385,8 +385,8 @@
                 </div>
                 <div class="col-1-of-2">
                     <p class="footer__copyright">
-                        Built by Alvaro Serrano and Hunter Nyenhuis for our CS3500 project using HTML, CSS and Javascript.
-                        <span><a class="footer__link" href="about.html">Meet our Developers</a></span> 
+                        Built by Alvaro Serrano and Hunter Nyenhuis for our CS3500 project using HTML, CSS, Javascript, and PHP.
+                        <span><a class="footer__link" href="about.html">Meet our Developers</a></span>
                        <br>    Copyright &copy; .
                     </p>
                 </div>
@@ -486,4 +486,4 @@
         -->
 
     </body>
-</html> 
+</html>

@@ -3,11 +3,11 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
+
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
         <link rel="stylesheet" href="css/test.css">
         <link rel="shortcut icon" type="image/png" href="images/loghip.jpeg">
-        
+
         <title>trillo &mdash; Your all-in-one booking app</title>
     </head>
     <body>
@@ -208,7 +208,7 @@
                     <div class="user-reviews-3">
                         <figure class="review-3">
                             <blockquote class="review-3__text">
-                                Alvaro and Hunter do care about your goals more than anyone. From they first moment they have understood the needs of business and have showcased its strength through an user-friendly website that adapst to all kinds of techologies.
+                                Alvaro and Hunter do care about your goals more than anyone. From their first moment they have understood the needs of business and have showcased its strength through a user-friendly website that adapst to all kinds of techologies.
                             </blockquote>
                             <figcaption class="review-3__user">
                                 <img src="images/user-1.jpg" alt="User 1" class="review-3__photo">
@@ -222,7 +222,7 @@
 
                         <figure class="review-3">
                             <blockquote class="review-3__text">
-                                This group of developers are responsible for the design of responsive and full-stack applications. It is the second time I purchase their services and I can´t stop writing positive reviews about their customer service.
+                                This group of developers are responsible for the design of responsive and full-stack applications. It is the second time I purchased their services and I can´t stop writing positive reviews about their customer service.
                             </blockquote>
                             <figcaption class="review-3__user">
                                 <img src="images/user-2.jpg" alt="User 1" class="review-3__photo">
