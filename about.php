@@ -7,6 +7,7 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
         <link rel="stylesheet" href="css/test.css">
         <link rel="shortcut icon" type="image/png" href="images/loghip.jpeg">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
         <title>trillo &mdash; Your all-in-one booking app</title>
     </head>
@@ -51,70 +52,56 @@
 
 
         <div class="content-3">
-            <nav class="sidebar-3">
-                <ul class="side-nav-3">
-                    <li class="side-nav-3__item side-nav-3__item--active" style="padding:10px;">
-                        <a href="#" class="side-nav-3__link">
-                            <svg class="side-nav-3__icon">
-                                <a href="#"><use xlink:href="images/sprite.svg#icon-compass"></use></a>
-                            </svg>
-                            <span><a href="main.php">HTML</a></span>
-                        </a>
-                    </li>
-                    <li class="side-nav-3__item" style="padding:10px;">
-                        <a href="#" class="side-nav-3__link">
-                            <svg class="side-nav-3__icon">
-                                <a href="#"><use xlink:href="images/sprite.svg#icon-aircraft-take-off"></use></a>
-                            </svg>
-                            <span><a href="#">CSS</a></span>
-                        </a>
-                    </li>
-                    <li class="side-nav-3__item" style="padding:10px;">
-                        <a href="#" class="side-nav-3__link">
-                            <svg class="side-nav-3__icon">
-                                <a href="#"><use xlink:href="images/sprite.svg#icon-key"></use></a>
-                            </svg>
-                            <span><a href="#">JAVASCRIPT</a></span>
-                        </a>
-                    </li>
-                    <li class="side-nav-3__item" style="padding:10px;">
-                        <a href="#" class="side-nav-3__link">
-                            <svg class="side-nav-3__icon">
-                                <a href="#"><use xlink:href="images/sprite.svg#icon-globe"></use></a>
-                            </svg>
-                            <span><a href="#">JQUERY</a></span>
-                        </a>
-                    </li>
-                    <li class="side-nav-3__item" style="padding:10px;">
-                        <a href="#" class="side-nav-3__link">
-                            <svg class="side-nav-3__icon">
-                                <a href="#"><use xlink:href="images/sprite.svg#icon-bookmark"></use></a>
-                            </svg>
-                            <span><a href="#">AJAX</a></span>
-                        </a>
-                    </li>
-                    <li class="side-nav-3__item" style="padding:10px;">
-                        <a href="#" class="side-nav-3__link">
-                            <svg class="side-nav-3__icon">
-                                <a href="#"><use xlink:href="images/sprite.svg#icon-bookmark"></use></a>
-                            </svg>
-                            <span><a href="#">SQL</a></span>
-                        </a>
-                    </li>
-                    <li class="side-nav-3__item" style="padding:10px;">
-                        <a href="#" class="side-nav-3__link">
-                            <svg class="side-nav-3__icon">
-                                <a href="#"><use xlink:href="images/sprite.svg#icon-bookmark"></use></a>
-                            </svg>
-                            <span><a href="logout.php">PHP</a></span>
-                        </a>
-                    </li>
-                </ul>
-
-                <div class="legal-3">
-                    &copy; All rights reserved.
-                </div>
-            </nav>
+                <nav class="sidebar-3">
+                    <ul class="side-nav-3">
+                        <li class="side-nav-3__item side-nav-3__item--active" style="padding:10px;">
+                            <a href="#" class="side-nav-3__link">
+                                <i class="fab fa-html5">
+                                <span><a href="main.php">HTML</i></a></span>
+                            </a>
+                        </li>
+                        <li class="side-nav-3__item" style="padding:10px;">
+                            <a href="#" class="side-nav-3__link">
+                                <i class="fab fa-css3-alt"></i>
+                                <span><a href="#">CSS</a></span>
+                            </a>
+                        </li>
+                        <li class="side-nav-3__item" style="padding:10px;">
+                            <a href="#" class="side-nav-3__link">
+                                <i class="fab fa-js-square"></i>
+                                <span><a href="#">JAVASCRIPT</a></span>
+                            </a>
+                        </li>
+                        <li class="side-nav-3__item" style="padding:10px;">
+                            <a href="#" class="side-nav-3__link">
+                                <i class="fab fa-js-square"></i>
+                                <span><a href="#">JQUERY</a></span>
+                            </a>
+                        </li>
+                        <li class="side-nav-3__item" style="padding:10px;">
+                            <a href="#" class="side-nav-3__link">
+                                <i class="fab fa-js-square"></i>
+                                <span><a href="#">AJAX</a></span>
+                            </a>
+                        </li>
+                        <li class="side-nav-3__item" style="padding:10px;">
+                            <a href="#" class="side-nav-3__link">
+                                <i class="fas fa-database"></i>
+                                <span><a href="#">SQL</a></span>
+                            </a>
+                        </li>
+                        <li class="side-nav-3__item" style="padding:10px;">
+                            <a href="#" class="side-nav-3__link">
+                                <i class="fab fa-php"></i>
+                                <span><a href="logout.php">PHP</a></span>
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <div class="legal-3">
+                        &copy; All rights reserved.
+                    </div>
+                </nav>
 
 
 
@@ -135,6 +122,7 @@
                     <figure class="gallery-3__item">
                         <img src="images/git.png" alt="jQuery" class="gallery-3__photo" style = "width:100%; height:100%; margin-top: 20px;">
                     </figure>
+
                     <div class="navigation">
                     <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
         
