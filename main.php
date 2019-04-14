@@ -386,7 +386,7 @@
                 <div class="col-1-of-2">
                     <p class="footer__copyright">
                         Built by Alvaro Serrano and Hunter Nyenhuis for our CS3500 project using HTML, CSS, Javascript, and PHP.
-                        <span><a class="footer__link" href="about.html">Meet our Developers</a></span>
+                        <span><a class="footer__link" href="about.php">Meet our Developers</a></span>
                        <br>    Copyright &copy; .
                     </p>
                 </div>
