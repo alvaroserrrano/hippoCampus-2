@@ -32,7 +32,7 @@ if(isset($_POST['signup-submit'])){
                     header("Location: ../signup.php?error=usertaken");
                     exit();
                 }else{
-                    $sql = "INSERT INTO chat (username, password) VALUES (?, ?, ?)";
+                    $sql = "INSERT INTO `login` (`username`, `password`) VALUES (?,?)";
                     $statement = $connect->prepare($sql);
                     $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
                     //BIND PARAMETERS IN PLACEHOLDER

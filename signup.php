@@ -8,7 +8,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Sign up page</title>
     <!-- <link rel="stylesheet" href="form.css"> -->
 </head>
 <body>
@@ -21,8 +21,6 @@
                     echo '<p class = "signupError">Fill in all fields</p>';
                 }else if ($_GET['error'] == "invalidusername"){
                     echo '<p class = "signupError">Invalid user name. Choose another one</p>';
-                }else if ($_GET['error'] == "invalidemail"){
-                    echo '<p class = "signupError">Invalid email. Choose another one</p>';
                 }else if ($_GET['error'] == "passwordnotmatch"){
                     echo '<p class = "signupError">Passwords do not match</p>';
                 }else if ($_GET['error'] == "sqlerror"){
