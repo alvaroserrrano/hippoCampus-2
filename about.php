@@ -134,11 +134,19 @@
         
                     <nav class="navigation__nav" >
                         <ul class="navigation__list">
+<<<<<<< HEAD
                             <li class="navigation__item" ><a href="main.php" class="navigation__link" ><span>01</span>Hippo Campus</a></li>
                             <li class="navigation__item" ><a href="bambi2.html" class="navigation__link"><span>02</span>Bambi</a></li>
                             <li class="navigation__item" ><a href="landmark2.html" class="navigation__link"><span>03</span>Landmark</a></li>
                             <li class="navigation__item" ><a href="budget.html" class="navigation__link"><span>04</span>Finance</a></li>
                             <li class="navigation__item" ><a href="about.php" class="navigation__link"><span>05</span>Developers</a></li>
+=======
+                            <li class="navigation__item" target="_blank"><a href="#main.php" class="navigation__link" target="_blank"><span>01</span>Hippo Campus</a></li>
+                            <li class="navigation__item" target="_blank"><a href="bambi2.html" class="navigation__link"><span>02</span>Bambi</a></li>
+                            <li class="navigation__item" target="_blank"><a href="landmark2.html" class="navigation__link"><span>03</span>Landmark</a></li>
+                            <li class="navigation__item" target="_blank"><a href="budget.html" class="navigation__link"><span>04</span>Finance</a></li>
+                            <li class="navigation__item" target="_blank"><a href="about.php" class="navigation__link"><span>05</span>Developers</a></li>
+>>>>>>> 21b09f3ca99da87390dec5a2ea4c41540f54c15b
                             <li class="navigation__item">
                             <li class="navigation__item" ><a href="index.php" class="navigation__link"><span>06</span>Live chat</a></li>
                             <li class="navigation__item" ><a href="logout.php" class="navigation__link"><span>07</span>Logout</a></li>
