@@ -24,7 +24,7 @@ if(isset($_POST['signup-submit'])){
             if($password !== $passwordRepeat){
                 header("Location: ../signup.php?error=passwordnotmatch&username=".$username);
             }else{
-                $sql = "SELECT username FROM chat WHERE username=$username";
+                $sql = "SELECT username FROM login WHERE username=$username";
                 $statement = $connect->prepare($sql);
                 $statement->execute();
                 $count = $statement->rowCount();
@@ -32,11 +32,11 @@ if(isset($_POST['signup-submit'])){
                     header("Location: ../signup.php?error=usertaken");
                     exit();
                 }else{
-                    $sql = "INSERT INTO `login` (`username`, `password`) VALUES (?,?)";
+                    $sql = "INSERT INTO login (username, password) VALUES ('".$username.", ".$username."')";
                     $statement = $connect->prepare($sql);
                     $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
                     //BIND PARAMETERS IN PLACEHOLDER
-                    $statement->bindParam('ss', $username, $hashedPassword);
+                    // $statement->bindParam('ss', $username, $hashedPassword);
                     $statement->execute();
                     //Maybe take user to login page?????????
                     header("Location: ../main.php?signup=success");

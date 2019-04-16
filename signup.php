@@ -39,7 +39,7 @@
                         <input type="text" name="username" id="" placeholder=" Enter username">
                         <input type="password" name="password" id="" placeholder= "Enter password">
                         <input type="password" name="passwordRepeat" id="" placeholder="Repeat password">
-                        <button type="submit" name="signup-submit" >Signup</button>
+                        <button type="submit" name="signup-submit">Signup</button>
                     </form>
                 </div>
             </div>
